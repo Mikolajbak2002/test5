@@ -199,9 +199,9 @@ img {
     var(--backgroung-dark-transparent);
 }
 
-.team {
+/* .team {
   background-color: var(--background-grey);
-}
+} */
 
 .white {
   background-color: var(--background-white);
@@ -260,7 +260,7 @@ img {
   text-align: center;
 }
 
-.thumb {
+/* .thumb {
   position: relative;
 }
 
@@ -275,7 +275,7 @@ img {
   height: 70px;
   bottom: 0;
   background-color: var(--background-dark-eighty);
-}
+} */
 
 .non-italic {
   font-style: normal;
@@ -342,22 +342,22 @@ img {
   margin: 0 500px;
 }
 
-.application-list {
+/* .application-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} */
 
-.application-list-item:not(:first-child) {
+/* .application-list-item:not(:first-child) {
   margin-left: 30px;
-}
+} */
 
-.presentation-list {
+/* .presentation-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 50px;
-}
+} */
 
 .designers-list {
   display: flex;
@@ -477,7 +477,7 @@ img {
   margin-bottom: 30px;
 }
 
-.icons-social-media {
+/* .icons-social-media {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -499,7 +499,7 @@ img {
   color: var(--brand-blue);
   --color1: var(--brand-blue);
   --color2: var(--font-light);
-}
+} */
 
 .clients-list {
   display: flex;
@@ -839,4 +839,163 @@ img {
 .legal-checkbox input:checked ~ .checkmark {
   border-color: var(--background-white);
   box-shadow: none;
+}
+
+/* ========= APPLICATION CARDS ===============*/
+
+.application {
+}
+
+.application__header--hidden {
+  display: none;
+}
+
+.application__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card:not(:first-child) {
+  margin-left: 30px;
+}
+
+.card__icon {
+  background-color: var(--background-grey);
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+}
+
+.card__header {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.17;
+  color: var(--font-dark);
+}
+
+.card__text {
+}
+
+/*==========PRESENTATION===========*/
+
+.presentation {
+}
+
+.presentation__header {
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--font-dark);
+  text-align: center;
+}
+
+.presentation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.product {
+}
+
+.product__photo {
+  position: relative;
+}
+
+.product__label {
+  position: absolute;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 27px;
+  color: var(--font-light);
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  background-color: var(--background-dark-eighty);
+}
+
+/*======================  TEAM  ==============*/
+
+.section--grey {
+  background-color: var(--background-grey);
+}
+
+.team {
+}
+
+.team__header {
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--font-dark);
+  text-align: center;
+}
+
+.team__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.team-member-card {
+  border: 1px solid var(--header-bottom-border);
+  box-shadow: 0px 1px 3px var(--shadow-black-twelve),
+    0px 1px 1px var(--shadow-black-fourteen),
+    0px 2px 1px var(--shadow-black-twenty);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-white);
+}
+
+.team-member-card__name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: var(--font-dark);
+  text-align: center;
+  padding-top: 30px;
+}
+
+.team-member-card__position {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.71;
+  text-align: center;
+  padding: 10px 0 16px;
+}
+
+.team-member-card__sm-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+/*===================TEAM MEMBER SOCIAL MEDIA =============*/
+
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.social-media-list__item {
+  color: var(--font-light);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-list__icon {
+  --color1: currentColor;
+}
+
+.social-media-list__item:hover,
+.social-media-list__item:focus {
+  color: var(--brand-blue);
+  --color1: var(--brand-blue);
+  --color2: var(--font-light);
 }
