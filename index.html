@@ -18,7 +18,7 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a class="logo navigation-logo" href="index.html"
+          <a class="logo logo--indent" href="index.html"
             ><span style="color: var(--brand-blue)">Web</span
             ><span>Studio</span></a
           >
@@ -396,47 +396,47 @@
         </div>
       </section>
       <section class="section">
-        <div class="container">
-          <h2 class="big-header">Nasi klienci</h2>
-          <ul class="clients-list list">
+        <div class="container clients">
+          <h2 class="clients__header">Nasi klienci</h2>
+          <ul class="clients__list list">
             <li>
-              <div class="i-border">
-                <svg class="icon-group-style" width="106" height="60">
+              <div class="clients__border">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="images/icons.svg#icon-group_client1_mk"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="i-border">
-                <svg class="icon-group-style" width="106" height="60">
+              <div class="clients__border">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="images/icons.svg#icon-group_client_2_mk"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="i-border">
-                <svg class="icon-group-style" width="106" height="60">
+              <div class="clients__border">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="images/icons.svg#icon-groupclient3_mk"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="i-border">
-                <svg class="icon-group-style" width="106" height="60">
+              <div class="clients__border">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="images/icons.svg#icon-group_client4_mk"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="i-border">
-                <svg class="icon-group-style" width="106" height="60">
+              <div class="clients__border">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="images/icons.svg#icon-group_client5_mk"></use>
                 </svg>
               </div>
             </li>
             <li>
-              <div class="i-border">
-                <svg class="icon-group-style" width="106" height="60">
+              <div class="clients__border">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="images/icons.svg#icon-vector_client6_mk"></use>
                 </svg>
               </div>
@@ -449,65 +449,63 @@
       <div class="container">
         <div class="footer-block">
           <div>
-            <a class="logo footer-logo" href="index.html"
+            <a class="logo logo--block" href="index.html"
               ><span style="color: var(--brand-blue)">Web</span
               ><span style="color: var(--font-light)">Studio</span></a
             >
-            <address class="non-italic">
+            <address class="address">
               <p>m.Warszawa, Aleje Jerozolimskie 21</p>
               <ul>
-                <li class="list contact-footer-item">
-                  <a class="contact-footer" href="mailto:info@example.com"
+                <li class="list address__item">
+                  <a class="address__link" href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
-                <li class="list contact-footer-item">
-                  <a class="contact-footer" href="tel:111111111"
+                <li class="list address__item">
+                  <a class="address__link" href="tel:111111111"
                     >+48 111 111 111</a
                   >
                 </li>
               </ul>
             </address>
           </div>
-          <ul class="social-media-footer">
-            <h3 class="small-header-footer">DOŁĄCZ DO NAS</h3>
-            <li class="icons-social-media-footer">
-              <a class="icon-social-media-footer">
-                <svg class="icon-sm-footer" width="44" height="44">
+          <ul class="social-media">
+            <h3 class="social-media__header">DOŁĄCZ DO NAS</h3>
+            <li class="social-media__list">
+              <a class="social-media__link">
+                <svg class="social-media__icon" width="44" height="44">
                   <use href="images/icons.svg#icon-ellipse_mk"></use>
                 </svg>
               </a>
-              <a class="icon-social-media-footer">
-                <svg class="icon-sm-footer" width="44" height="44">
+              <a class="social-media__link">
+                <svg class="social-media__icon" width="44" height="44">
                   <use href="images/icons.svg#icon-ellipse_mk_t"></use>
                 </svg>
               </a>
-              <a class="icon-social-media-footer">
-                <svg class="icon-sm-footer" width="44" height="44">
+              <a class="social-media__link">
+                <svg class="social-media__icon" width="44" height="44">
                   <use href="images/icons.svg#icon-ellipse_mk_f"></use>
                 </svg>
               </a>
-              <a class="icon-social-media-footer">
-                <svg class="icon-sm-footer" width="44" height="44">
+              <a class="social-media__link">
+                <svg class="social-media__icon" width="44" height="44">
                   <use href="images/icons.svg#icon-ellipse_mk_in"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <div class="newsletter-container">
-            <h3 class="small-header-newsletter-footer">
-              ZAPISZ SIĘ DO NEWSLETTERA
-            </h3>
-            <form class="newsletter-wraper">
+          <div class="newsletter">
+            <h3 class="newsletter__header">ZAPISZ SIĘ DO NEWSLETTERA</h3>
+            <form class="newsletter__wraper">
               <input
-                class="newsletter-input"
+                class="newsletter__input"
                 type="text"
                 placeholder="E-mail"
                 id="newsletter"
                 name="Email"
               />
-              <button class="newsletter-btn" type="submit">
-                Zapisz się<svg class="icon-news-footer" width="24" height="24">
+              <button class="newsletter__btn" type="submit">
+                Zapisz się<svg class="newsletter__icon" width="24" height="24">
                   <use href="images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
